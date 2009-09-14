@@ -1,6 +1,6 @@
 ---
 name: MooseX-File_or_DB-Storage
-version: 0.3
+version: 0.4
 author:
   - 'Andy Brown <setitesuk@gmail.com>'
 abstract: module to add functions which will store out to a database as well as a file which contains a JSON string
@@ -19,6 +19,7 @@ requires:
   strict: 0
   warnings: 0
 build_requires:
+  DBD::SQLite: 0
   Test::Distribution: 0
   Test::Exception: 0
   Test::More: 0.8
@@ -26,7 +27,7 @@ build_requires:
 provides:
   MooseX::File_or_DB::Storage:
     file: lib/MooseX/File_or_DB/Storage.pm
-    version: 0.3
+    version: 0.4
 generated_by: Module::Build version 0.32
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
